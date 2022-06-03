@@ -15,7 +15,7 @@ const createDate = (listDate, position)=> {
     const outSorted = outAll.sort();
     output = outSorted.join("-");
     } else {
-      outputTMP = Math.round(Date.parse(listDate[position - 1])/1000);
+      outputTMP = Math.round(Date.parse(listDate[position])/1000);
       output = outputTMP.toString();
     }
     return output;
